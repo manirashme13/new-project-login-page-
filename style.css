@@ -1,0 +1,249 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.LoginPage {
+  width: 100%;
+  width: 50%;
+}
+
+.user-picture {
+  position: absolute;
+  color: gray;
+  margin-top: 0.2rem;
+  font-size: 0.7rem;
+}
+.close-picture {
+  position: absolute;
+  color: gray;
+  font-size: 0.7rem;
+  margin-left: 14rem;
+  margin-top: 1rem;
+}
+.lock-picture {
+  position: absolute;
+  color: gray;
+  margin-top: 5.7rem;
+  font-size: 0.7rem;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 3rem;
+  width: 85%;
+}
+
+.login {
+  height: 8.5rem;
+  color: #0093ed;
+}
+
+.header {
+  width: 85%;
+  height: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.LoginText {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 1.6rem;
+}
+
+.loginUserText {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.tip {
+  color: gray;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 80%;
+  margin-top: 3.5rem;
+  gap: 4rem;
+} 
+
+.email {
+  text-align: right;
+  border: none;
+  background-color: none;
+  border-bottom: 1px solid rgb(192, 190, 190);
+  outline: none;
+}
+
+.password {
+  text-align: right;
+  border: none;
+  background-color: none;
+  border-bottom: 1px solid rgb(192, 190, 190);
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: #0192ee;
+  color: white;
+  border-radius: 0.2rem;
+  height: 1.7rem;
+  transition: all 0.2s;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.capcha {
+  border: none;
+  background-color: none;
+  text-align: right;
+  border-bottom: 1px solid rgb(192, 190, 190);
+  outline: none;
+  width: 100%;
+  margin-left: 10.8rem;
+}
+
+.capcha-picture {
+  width: 10%;
+  height: 2rem;
+}
+
+.capchaMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.email[required] {
+  color: #0093ed;
+}
+
+.password[required] {
+  color: #0093ed;
+}
+
+.capcha[required] {
+  color: #0093ed;
+}
+
+.InputRemember {
+  color: gray;
+  margin-top: 2.5rem;
+  font-size: rem;
+}
+.checkbox {
+  font-size: 0.5rem;
+  cursor: pointer;
+}
+.input-check {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.RadarPage {
+  width: 60%;
+  height: 100%;
+  background-image: linear-gradient(to bottom left, #8febd7, #2faede);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pluse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pluse .Logo {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pluse .radar-angle {
+  position: fixed;
+  width: 15rem;
+  height: 38rem;
+  opacity: 0.4;
+  margin-bottom: 38rem;
+  margin-left: 15rem;
+  animation: radar-angle 10s linear infinite;
+  transform-origin: left bottom;
+}
+@keyframes radar-angle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.cricle-radar {
+  position: fixed;
+  margin-bottom: 1.3rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  opacity: 0.1;
+  background-color: white;
+}
+.cricle-radar0 {
+  animation: cricle-radar 4s 1.1s ease-in-out infinite both;
+}
+.cricle-radar1 {
+  animation: cricle-radar 4s 1.4s ease-in-out infinite both;
+}
+.cricle-radar2 {
+  animation: cricle-radar 4s 2s ease-in-out infinite both;
+}
+
+.cricle-radar3 {
+  animation: cricle-radar 4s 2.4s ease-in-out infinite both;
+}
+.cricle-radar4 {
+  animation: cricle-radar 4s 3s ease-in-out infinite both;
+}
+.cricle-radar5 {
+  animation: cricle-radar 4s 3.4s ease-in-out infinite both;
+}
+.cricle-radar6 {
+  animation: cricle-radar 4s 3.8s ease-in-out infinite both;
+}
+@keyframes cricle-radar {
+  0% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(8);
+    opacity: 0;
+  }
+}
+.Multi-text{
+  position: absolute;
+  color: white;
+  margin-top: 46.5rem;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
