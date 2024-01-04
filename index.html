@@ -77,8 +77,14 @@
                   placeholder="کد را وارد کنید "
                 />
               </div>
-              <button type="submit">ورود</button>
+              <button type="submit" onclick="callAlert('انجام شد')">ورود</button>
             </div>
+            <script src="main.js"></script>
+            <script>
+               function callAlert(msg) {
+                  alert(msg, 3000)
+               } 
+            </script>
             <div class="InputRemember">
               <label for="check" class="checkbox"> مرا به خاطر بسپار</label>
               <input id="check" class="input-check" type="checkbox" />
